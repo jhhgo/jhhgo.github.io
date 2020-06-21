@@ -1,22 +1,104 @@
-<?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://jhhgo.github.io</id>
-    <title>Jhh的小站</title>
-    <updated>2020-06-21T04:25:55.414Z</updated>
-    <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://jhhgo.github.io"/>
-    <link rel="self" href="https://jhhgo.github.io/atom.xml"/>
-    <subtitle>温故而知新</subtitle>
-    <logo>https://jhhgo.github.io/images/avatar.png</logo>
-    <icon>https://jhhgo.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2020, Jhh的小站</rights>
-    <entry>
-        <title type="html"><![CDATA[前端安全]]></title>
-        <id>https://jhhgo.github.io/post/qian-duan-an-quan/</id>
-        <link href="https://jhhgo.github.io/post/qian-duan-an-quan/">
-        </link>
-        <updated>2020-06-21T04:25:37.000Z</updated>
-        <content type="html"><![CDATA[<h1 id="前端安全">前端安全</h1>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>前端安全 | Jhh的小站</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://jhhgo.github.io/favicon.ico?v=1592713550380">
+<link rel="stylesheet" href="https://jhhgo.github.io/styles/main.css">
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+    <meta name="description" content="前端安全
+被动攻击
+被动攻击（passive attack）是指利用圈套策略执行攻击代码的攻 击模式。在被动攻击过程中，攻击者不直接对目标Web 应用访问发起攻击
+主动攻击
+主动攻击（active attack）是指攻击者通过直接访问 We..." />
+    <meta name="keywords" content="" />
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://jhhgo.github.io">
+        <img src="https://jhhgo.github.io/images/avatar.png?v=1592713550380" class="site-logo">
+        <h1 class="site-title">Jhh的小站</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      温故而知新
+    </div>
+    <div class="site-footer">
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://jhhgo.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">前端安全</h2>
+            <div class="post-date">2020-06-21</div>
+            
+            <div class="post-content" v-pre>
+              <h1 id="前端安全">前端安全</h1>
 <h2 id="被动攻击">被动攻击</h2>
 <p>被动攻击（passive attack）是指利用圈套策略执行攻击代码的攻 击模式。在被动攻击过程中，攻击者不直接对目标Web 应用访问发起攻击</p>
 <h2 id="主动攻击">主动攻击</h2>
@@ -109,6 +191,37 @@
 <p>Toker是一个随机数，同时存放在表单和用户cookie中，通过在form表单或头信息中传递token，发送请求后服务器对请求实体的token和cookie中的token进行对比，并且验证正确后会销毁</p>
 </li>
 </ol>
-]]></content>
-    </entry>
-</feed>
+
+            </div>
+            
+            
+
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
+
+
+  </body>
+</html>
